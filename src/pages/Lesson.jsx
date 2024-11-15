@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import { progressService } from "../services/progressService";
-import { lessons, getLessonById } from "../config/lessons";
+import { lessons, getLessonById } from "../config/Lessons";
 import { LoadingScreen } from "../components/LoadingSpinner";
 import Navbar from "../components/Navbar";
 
-const Lessons = () => {
+const LessonsPage = () => {
   const { user } = useAuth();
   const [progress, setProgress] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -206,4 +206,4 @@ const Lessons = () => {
   );
 };
 
-export default Lessons;
+export default LessonsPage;

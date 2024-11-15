@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import { progressService } from "../services/progressService";
-import { getLessonById, getNextLesson } from "../config/lessons";
+import { getLessonById, getNextLesson } from "../config/Lessons";
 import LoadingSpinner from "../components/LoadingSpinner";
 import { CheckCircle, ArrowRight } from "lucide-react";
 

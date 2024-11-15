@@ -4,7 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import { progressService } from "../services/progressService";
 import { practiceService } from "../config/Practice";
-import { getPracticeById, getNextLesson } from "../config/lessons";
+import { getPracticeById, getNextLesson } from "../config/Lessons";
 import LoadingSpinner from "../components/LoadingSpinner";
 
 const Practice = () => {
