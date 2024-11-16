@@ -8,7 +8,7 @@ import { Globe } from "lucide-react";
 export const Avatar = ({ email, size = "md" }) => {
   const getInitials = (email) => {
     const name = email.split("@")[0];
-    return name.substring(0, 2).toUpperCase();
+    return name.substring(0, 1).toUpperCase();
   };
 
   const sizeClasses = {

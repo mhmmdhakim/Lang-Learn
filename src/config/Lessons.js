@@ -1,200 +1,122 @@
-// src/config/lessons.js
-
 export const lessons = {
   beginner: {
-    title: "Beginner Level",
-    description: "Fundamental concepts and basic topics for beginners",
+    title: "Basic English",
+    description: "Foundation concepts for English language learners",
     lessons: [
       {
         id: "beginner-1",
-        title: "Introduction to Basics",
-        description: "Get started with fundamental concepts",
+        title: "Basic Grammar and Vocabulary",
+        description: "Essential grammar rules and everyday vocabulary",
         subLessons: [
           {
             id: "beginner-1-1",
-            title: "Basic Concepts",
+            title: "Subject Pronouns & Be Verbs",
             content: `
-                1. What are Basic Concepts?
-                  - Definition and importance of fundamentals
-                  - Core terminology and definitions
-                  - Building blocks of knowledge
+                1. Subject Pronouns
+                  - I, You, He, She, It, We, They
+                  - Examples:
+                    * I am a student
+                    * You are helpful
+                    * She is kind
                 
-                2. Key Components
-                  - Understanding the basics
-                  - Identifying core principles
-                  - Recognizing patterns
+                2. Be Verbs (am/is/are)
+                  - Present tense usage
+                  - Examples:
+                    * I am at school
+                    * The weather is nice
+                    * They are my friends
                 
-                3. Application Areas
-                  - Where to apply basic concepts
-                  - Real-world examples
-                  - Common use cases
+                3. Simple Sentences
+                  - Basic sentence structure
+                  - Examples:
+                    * I am happy
+                    * The cat is sleeping
+                    * We are studying English
               `,
-            duration: "15 min",
+            duration: "20 min",
             type: "theory",
             practice: {
               id: "practice-b1-1",
               questions: [
                 {
                   id: 1,
-                  question: "What is the main concept covered in this lesson?",
+                  question: "Which sentence uses the correct form of 'be'?",
                   options: [
-                    "Advanced techniques",
-                    "Fundamental concepts",
-                    "Expert strategies",
-                    "Complex theories",
+                    "They is happy",
+                    "He am a doctor",
+                    "She is beautiful",
+                    "I are tired",
                   ],
-                  correctAnswer: "Fundamental concepts",
+                  correctAnswer: "She is beautiful",
                 },
                 {
                   id: 2,
-                  question: "Why are basic concepts important?",
-                  options: [
-                    "They form the foundation for advanced learning",
-                    "They are easy to memorize",
-                    "They are not important",
-                    "They are only for beginners",
-                  ],
-                  correctAnswer:
-                    "They form the foundation for advanced learning",
+                  question:
+                    "Select the correct subject pronoun for a group of people:",
+                  options: ["He", "They", "It", "She"],
+                  correctAnswer: "They",
                 },
                 {
                   id: 3,
-                  question: "What is the best way to identify core principles?",
+                  question: "Choose the correct sentence:",
                   options: [
-                    "Skip the basics entirely",
-                    "Study advanced topics first",
-                    "Look for recurring patterns and fundamentals",
-                    "Ignore the building blocks",
+                    "You is my friend",
+                    "We am students",
+                    "They are happy",
+                    "He are tall",
                   ],
-                  correctAnswer: "Look for recurring patterns and fundamentals",
+                  correctAnswer: "They are happy",
                 },
               ],
             },
           },
           {
             id: "beginner-1-2",
-            title: "Getting Started",
+            title: "Basic Vocabulary - Daily Life",
             content: `
-                1. Starting Your Journey
-                  - Setting up your learning environment
-                  - Creating a study plan
-                  - Setting realistic goals
+                1. Everyday Objects
+                  - Common items vocabulary
+                  - Examples:
+                    * phone, book, pen, chair, table
+                    * door, window, bed, lamp, clock
                 
-                2. Learning Methodology
-                  - Step-by-step approach
-                  - Practice techniques
-                  - Common pitfalls to avoid
+                2. Basic Actions
+                  - Common verbs
+                  - Examples:
+                    * eat: I eat breakfast
+                    * sleep: She sleeps early
+                    * walk: They walk to school
                 
-                3. Progress Tracking
-                  - Measuring your progress
-                  - Identifying areas for improvement
-                  - Setting milestones
+                3. Simple Descriptions
+                  - Basic adjectives
+                  - Examples:
+                    * big/small: a big house
+                    * hot/cold: cold weather
+                    * new/old: a new car
               `,
-            duration: "20 min",
+            duration: "25 min",
             type: "practical",
             practice: {
               id: "practice-b1-2",
               questions: [
                 {
                   id: 1,
-                  question: "What is the first step in the learning process?",
-                  options: [
-                    "Understanding basics",
-                    "Advanced application",
-                    "Complex problem solving",
-                    "Expert techniques",
-                  ],
-                  correctAnswer: "Understanding basics",
+                  question: "Which word describes temperature?",
+                  options: ["Book", "Hot", "Walk", "Table"],
+                  correctAnswer: "Hot",
                 },
                 {
                   id: 2,
-                  question: "How should you track your progress?",
-                  options: [
-                    "Don't track progress at all",
-                    "Set milestones and measure achievements",
-                    "Only focus on difficult topics",
-                    "Skip the easy parts",
-                  ],
-                  correctAnswer: "Set milestones and measure achievements",
-                },
-                {
-                  id: 3,
-                  question: "What is a key component of a good study plan?",
-                  options: [
-                    "Studying randomly",
-                    "Setting realistic goals and timeframes",
-                    "Skipping practice sessions",
-                    "Avoiding fundamentals",
-                  ],
-                  correctAnswer: "Setting realistic goals and timeframes",
-                },
-              ],
-            },
-          },
-        ],
-      },
-      {
-        id: "beginner-2",
-        title: "Basic Applications",
-        description: "Learn to apply basic concepts",
-        subLessons: [
-          {
-            id: "beginner-2-1",
-            title: "Simple Applications",
-            content: `
-                1. Understanding Applications
-                  - Basic application structure
-                  - Components and their roles
-                  - Simple implementations
-                
-                2. Building Simple Solutions
-                  - Step-by-step development
-                  - Testing basics
-                  - Debug techniques
-                
-                3. Best Practices
-                  - Code organization
-                  - Documentation
-                  - Basic optimization
-              `,
-            duration: "25 min",
-            type: "practical",
-            practice: {
-              id: "practice-b2-1",
-              questions: [
-                {
-                  id: 1,
                   question:
-                    "How do you apply basic concepts in a simple scenario?",
-                  options: [
-                    "Follow the step-by-step guide",
-                    "Skip the basics",
-                    "Jump to advanced topics",
-                    "Ignore the fundamentals",
-                  ],
-                  correctAnswer: "Follow the step-by-step guide",
-                },
-                {
-                  id: 2,
-                  question: "What is an important aspect of testing basics?",
-                  options: [
-                    "Skipping tests entirely",
-                    "Testing only at the end",
-                    "Regular testing throughout development",
-                    "Ignoring test results",
-                  ],
-                  correctAnswer: "Regular testing throughout development",
+                    "Match the action: 'I ___ breakfast every morning.'",
+                  options: ["sleep", "eat", "walk", "read"],
+                  correctAnswer: "eat",
                 },
                 {
                   id: 3,
-                  question: "Why is documentation important?",
-                  options: [
-                    "It's not important",
-                    "It helps maintain and understand code",
-                    "It makes code slower",
-                    "It's only for experts",
-                  ],
-                  correctAnswer: "It helps maintain and understand code",
+                  question: "Which is a piece of furniture?",
+                  options: ["Phone", "Book", "Chair", "Pen"],
+                  correctAnswer: "Chair",
                 },
               ],
             },
@@ -204,71 +126,76 @@ export const lessons = {
     ],
   },
   intermediate: {
-    title: "Intermediate Level",
-    description: "Advanced concepts and moderate complexity topics",
+    title: "Intermediate English",
+    description: "Advanced grammar and complex vocabulary",
     lessons: [
       {
         id: "intermediate-1",
-        title: "Advanced Concepts",
-        description: "Explore more complex topics and applications",
+        title: "Perfect Tenses",
+        description: "Master present perfect and past perfect tenses",
         subLessons: [
           {
             id: "intermediate-1-1",
-            title: "Complex Applications",
+            title: "Present Perfect",
             content: `
-                1. Complex System Design
-                  - System architecture
-                  - Component interaction
-                  - Performance considerations
+                1. Present Perfect Structure
+                  - have/has + past participle
+                  - Examples:
+                    * I have visited Paris
+                    * She has completed her homework
+                    * They have lived here for 5 years
                 
-                2. Advanced Features
-                  - Feature implementation
-                  - Integration strategies
-                  - Optimization techniques
+                2. Time Expressions
+                  - Usage with: since, for, already, yet
+                  - Examples:
+                    * I have studied English since 2020
+                    * They have worked here for 10 years
+                    * Have you eaten lunch yet?
                 
-                3. Quality Assurance
-                  - Testing strategies
-                  - Performance monitoring
-                  - Error handling
+                3. Experience vs. Recent Past
+                  - Life experiences
+                  - Examples:
+                    * I have never seen snow
+                    * She has been to London twice
+                    * We have just arrived
               `,
-            duration: "35 min",
+            duration: "30 min",
             type: "theory",
             practice: {
               id: "practice-i1-1",
               questions: [
                 {
                   id: 1,
-                  question: "What characterizes a complex application?",
+                  question: "Choose the correct present perfect form:",
                   options: [
-                    "Multiple interacting components",
-                    "Single simple function",
-                    "Basic calculations",
-                    "Elementary concepts",
+                    "I has seen",
+                    "She have gone",
+                    "They has arrived",
+                    "He has finished",
                   ],
-                  correctAnswer: "Multiple interacting components",
+                  correctAnswer: "He has finished",
                 },
                 {
                   id: 2,
-                  question:
-                    "What is a key consideration in system architecture?",
+                  question: "Select the correct time expression:",
                   options: [
-                    "Ignoring scalability",
-                    "Component coupling and cohesion",
-                    "Using only basic features",
-                    "Avoiding documentation",
+                    "I have studied English yesterday",
+                    "I have studied English since 2020",
+                    "I have studied English tomorrow",
+                    "I have studied English last year",
                   ],
-                  correctAnswer: "Component coupling and cohesion",
+                  correctAnswer: "I have studied English since 2020",
                 },
                 {
                   id: 3,
-                  question: "Why is performance monitoring important?",
+                  question: "Which sentence is correct?",
                   options: [
-                    "It's not important",
-                    "To identify and resolve bottlenecks",
-                    "To make systems slower",
-                    "To avoid testing",
+                    "They have never went there",
+                    "They have never gone there",
+                    "They have never going there",
+                    "They have never goes there",
                   ],
-                  correctAnswer: "To identify and resolve bottlenecks",
+                  correctAnswer: "They have never gone there",
                 },
               ],
             },
@@ -278,71 +205,75 @@ export const lessons = {
     ],
   },
   advanced: {
-    title: "Advanced Level",
-    description: "Expert-level concepts and complex applications",
+    title: "Advanced English",
+    description: "Complex structures and idiomatic expressions",
     lessons: [
       {
         id: "advanced-1",
-        title: "Expert Techniques",
-        description: "Master advanced concepts and expert-level applications",
+        title: "Idiomatic Expressions",
+        description: "Master common English idioms and their usage",
         subLessons: [
           {
             id: "advanced-1-1",
-            title: "Expert Applications",
+            title: "Business Idioms",
             content: `
-                1. Advanced System Architecture
-                  - Scalable design patterns
-                  - Microservices architecture
-                  - Distributed systems
+                1. Common Business Idioms
+                  - Expressions and meanings
+                  - Examples:
+                    * "Break even" - Neither make profit nor loss
+                    * "Get the ball rolling" - Start a project
+                    * "Think outside the box" - Think creatively
                 
-                2. Performance Optimization
-                  - Advanced optimization techniques
-                  - Resource management
-                  - System monitoring
+                2. Usage in Context
+                  - Professional situations
+                  - Examples:
+                    * "Let's get the ball rolling on the new project"
+                    * "We need to think outside the box to solve this"
+                    * "The company finally broke even this quarter"
                 
-                3. Best Practices
-                  - Industry standards
-                  - Security considerations
-                  - Maintenance strategies
+                3. Formal vs. Informal Usage
+                  - When to use idioms
+                  - Examples:
+                    * Formal: "The project was successful"
+                    * Informal: "The project hit the nail on the head"
               `,
-            duration: "45 min",
+            duration: "35 min",
             type: "theory",
             practice: {
               id: "practice-a1-1",
               questions: [
                 {
                   id: 1,
-                  question: "What defines an expert-level solution?",
+                  question: "What does 'break even' mean?",
                   options: [
-                    "Optimal performance and scalability",
-                    "Basic functionality",
-                    "Simple implementation",
-                    "Minimal features",
+                    "Make a huge profit",
+                    "Neither make profit nor loss",
+                    "Take a break",
+                    "Break something",
                   ],
-                  correctAnswer: "Optimal performance and scalability",
+                  correctAnswer: "Neither make profit nor loss",
                 },
                 {
                   id: 2,
-                  question:
-                    "What is a key aspect of microservices architecture?",
+                  question: "When would you use 'get the ball rolling'?",
                   options: [
-                    "Monolithic design",
-                    "Service independence and modularity",
-                    "Avoiding testing",
-                    "Single point of failure",
+                    "To end a project",
+                    "To play sports",
+                    "To start a project",
+                    "To take a break",
                   ],
-                  correctAnswer: "Service independence and modularity",
+                  correctAnswer: "To start a project",
                 },
                 {
                   id: 3,
-                  question: "Why are security considerations important?",
+                  question: "Which context is most appropriate for idioms?",
                   options: [
-                    "They're not important",
-                    "To protect system and data integrity",
-                    "To make systems slower",
-                    "To complicate development",
+                    "Legal documents",
+                    "Casual business meetings",
+                    "Academic papers",
+                    "Formal presentations",
                   ],
-                  correctAnswer: "To protect system and data integrity",
+                  correctAnswer: "Casual business meetings",
                 },
               ],
             },
@@ -353,6 +284,7 @@ export const lessons = {
   },
 };
 
+// Keep the utility functions unchanged
 export const getLessonById = (lessonId) => {
   if (!lessonId) return null;
   const [level, mainLesson, subLesson] = lessonId.split("-");
@@ -369,7 +301,7 @@ export const getPracticeById = (practiceId) => {
         if (subLesson.practice?.id === practiceId) {
           return {
             ...subLesson.practice,
-            lessonId: subLesson.id, // Include the associated lessonId
+            lessonId: subLesson.id,
           };
         }
       }
@@ -389,17 +321,14 @@ export const getNextLesson = (currentLessonId) => {
 
   if (!currentMainLesson) return null;
 
-  // Find current sub-lesson index
   const currentSubIndex = currentMainLesson.subLessons.findIndex(
     (sub) => sub.id === currentLessonId
   );
 
-  // Try next sub-lesson in current main lesson
   if (currentSubIndex < currentMainLesson.subLessons.length - 1) {
     return currentMainLesson.subLessons[currentSubIndex + 1].id;
   }
 
-  // Try first sub-lesson of next main lesson in current level
   const currentMainIndex = currentLevel.lessons.findIndex(
     (lesson) => lesson.id === currentMainLesson.id
   );
@@ -407,7 +336,6 @@ export const getNextLesson = (currentLessonId) => {
     return currentLevel.lessons[currentMainIndex + 1].subLessons[0].id;
   }
 
-  // Try first sub-lesson of first main lesson in next level
   const levels = Object.keys(lessons);
   const currentLevelIndex = levels.indexOf(level);
   if (currentLevelIndex < levels.length - 1) {

@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
-import { assignmentService } from "../services/assignmentService";
-import LoadingSpinner from "../components/LoadingSpinner";
-import MultipleChoice from "../components/MultipleChoice";
-import DragAndDrop from "../components/DragAndDrop";
+import assignments from "../config/Assignments";
 
 const Assignment = () => {
   const { assignmentId } = useParams();
@@ -16,15 +13,18 @@ const Assignment = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchAssignment = async () => {
+    const fetchAssignment = () => {
       try {
         setLoading(true);
         setError(null);
 
-        // Fetch assignment data
-        const assignmentData = await assignmentService.getAssignment(
-          assignmentId
-        );
+        // Cari assignment berdasarkan ID
+        const assignmentData = assignments.find((a) => a.id === assignmentId);
+
+        if (!assignmentData) {
+          throw new Error("Assignment not found");
+        }
+
         setAssignment(assignmentData);
       } catch (error) {
         console.error("Error fetching assignment:", error);
@@ -34,9 +34,7 @@ const Assignment = () => {
       }
     };
 
-    if (assignmentId) {
-      fetchAssignment();
-    }
+    fetchAssignment();
   }, [assignmentId]);
 
   const handleSubmit = async (answers) => {

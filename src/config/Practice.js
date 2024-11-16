@@ -1,7 +1,7 @@
 // src/services/Practice.js
 import { db } from "../services/firebase";
 import { doc, getDoc, setDoc, updateDoc } from "firebase/firestore";
-import { lessons, getPracticeById } from "./lessons";
+import { lessons, getPracticeById } from "./Lessons";
 
 export const practiceService = {
   async getPractice(practiceId) {

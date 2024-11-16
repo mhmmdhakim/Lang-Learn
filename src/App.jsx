@@ -18,6 +18,7 @@ import Practice from "./pages/Practice";
 import Progress from "./pages/Progress";
 import { Suspense } from "react";
 import Profile from "./pages/Profile";
+import Assignment from "./pages/Assignment";
 
 function App() {
   return (
@@ -74,6 +75,14 @@ function App() {
               />
               <Route
                 path="/profile"
+                element={
+                  <PrivateRoute>
+                    <Progress />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="/assignment"
                 element={
                   <PrivateRoute>
                     <Progress />
